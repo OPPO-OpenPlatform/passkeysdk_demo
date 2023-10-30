@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="gray">#efefef</color>
+    <color name="txt_title">#ff333333</color>
+    <color name="btn_enabled">#0091EA</color>
+    <color name="btn_disabled">#6B0091EA</color>
+    <color name="progress">#0294f0</color>
+    <color name="orange">#FB8C00</color>
+    <color name="orange_disabled">#9AFB8C00</color>
+    <color name="orange_bg">#21FB8C00</color>
+    <color name="green">#43A047</color>
+    <color name="green_disabled">#A343A047</color>
+    <color name="green_bg">#2243A047</color>
+    <color name="red">#E53935</color>
+</resources>

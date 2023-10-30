@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/fragment_padding"
+    android:paddingTop="@dimen/fragment_padding_top"
+    android:paddingBottom="@dimen/fragment_padding">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/tv_label"
+            android:text="@string/local_function" />
+
+        <Spinner
+            android:id="@+id/spinner_case"
+            style="@style/tv_label"
+            android:layout_width="match_parent" />
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadeScrollbars="false"
+        android:scrollbarSize="3dp"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingRight="@dimen/fragment_padding">
+
+            <TextView
+                android:id="@+id/tv_request_message"
+                style="@style/tv_label"
+                android:layout_marginTop="5dp"
+                android:text="@string/local_request" />
+
+            <EditText
+                android:id="@+id/et_request_message"
+                style="@style/et_input"
+                android:inputType="textMultiLine" />
+
+            <Button
+                android:id="@+id/btn_start_test"
+                style="@style/btn_bg_blue"
+                android:layout_width="200dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/start_test" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="100dp" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

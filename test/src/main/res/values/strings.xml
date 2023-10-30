@@ -1,0 +1,113 @@
+<resources>
+    <!-- 公共 -->
+    <string name="app_name">PasskeyTest</string>
+    <string name="app_name_version">PasskeyTest(%1$s)</string>
+    <string name="save">保存</string>
+    <string name="reg">注册</string>
+    <string name="auth">认证</string>
+    <string name="dereg">注销</string>
+    <string name="confirm">确认</string>
+    <string name="cancel">取消</string>
+    <string name="success">成功</string>
+    <string name="test_failed">测试失败</string>
+    <string name="error_server_connect">服务器连接异常:%1$s</string>
+    <string name="error_parse_fido2request">解析生成fido2sdk的请求参数异常:%1$s</string>
+    <string name="failed_message">错误码=%1$d,错误描述=%2$s</string>
+    <string name="test_failed_sdk">Fido2Sdk返回错误：错误码=%1$d,错误描述=%2$s</string>
+    <string name="test_failed_server">服务端返回错误：错误码=%1$d,错误描述=%2$s</string>
+    <string name="test_failed_credential">解析fido2Sdk返回的CredentialId出现异常</string>
+    <string name="service">Service</string>
+    <string name="activity">Activity</string>
+    <string name="passkeys">通行密钥</string>
+
+    <!-- MainActivity -->
+    <string name="exit">退出</string>
+    <string name="test_local">本地测试</string>
+    <string name="test_server">服务端测试</string>
+    <string name="test_whole">整体测试</string>
+    <string name="setting">设置</string>
+    <string name="check_failed">检测失败</string>
+    <string name="check_failed_describe">查询该手机的Fido2支持能力失败。如确认已支持，请联系开发人员定位问题原因。%1$s</string>
+
+    <!-- 本地测试界面 -->
+    <string name="local_function">选择测试类型:</string>
+    <string name="local_request">请求报文:</string>
+    <string name="default_one">1</string>
+    <string name="label_thread_num">线程个数:</string>
+    <string name="label_connectType">交互方式:</string>
+    <string name="select_case_error">当前所选择的测试接口出现异常！</string>
+    <string name="start_test">开始测试</string>
+
+    <!-- 服务端测试界面 -->
+    <string name="check_support">支持能力检测</string>
+    <string name="label_username">用户名:</string>
+    <string name="label_authType">authType:</string>
+    <string name="label_transType">transType:</string>
+    <string name="label_residentKey">residentKey:</string>
+    <string name="label_transaction">认证交易回显:</string>
+    <string name="label_cert_dn">证书DN:</string>
+    <string name="label_aaguid">Aaguid:</string>
+    <string name="label_credential">凭据ID:</string>
+    <string name="label_reg_time">注册时间:</string>
+    <string name="authType_not_support">手机不支持的AuthType</string>
+    <string name="userName_not_empty">用户名不能为空</string>
+    <string name="transType_not_empty">transType不能为空</string>
+    <string name="query_reg_info_server">查询注册信息\n(服务端)</string>
+    <string name="query_reg_info_empty">没有查询到用户的注册信息</string>
+    <string name="title_reg_failed">注册失败(%1$s)</string>
+    <string name="title_auth_failed">认证失败(%1$s)</string>
+    <string name="title_dereg_failed">注销失败(%1$s)</string>
+    <string name="title_reg_info_failed">获取注册信息失败(%1$s)</string>
+    <string name="title_save_failed">保存失败(%1$s)</string>
+    <string name="cert_update">证书更新</string>
+    <string name="support_label_security_level">安全等级:%1$s</string>
+    <string name="support_label_uvm">认证方式:%1$s</string>
+    <string name="support_label_platform">平台:%1$s</string>
+    <string name="support_label_auth_type">AuthType:%1$s</string>
+    <string name="support_label_version_ca">CA版本号:%1$s</string>
+    <string name="support_label_version_ta">TA版本号:%1$s</string>
+    <string name="support_label_aaguid">Aaguid:%1$s</string>
+    <string name="hint_devicePubKey_add">当前所使用密钥为其它设备导入的通行密钥，是否将当前设备保存为可信设备？</string>
+    <string name="required">required</string>
+    <string name="preferred">preferred</string>
+    <string name="discouraged">discouraged</string>
+    <string name="reg_silent">静默注册</string>
+
+    <!-- 整体测试页面 -->
+    <string name="float_not_grant">您的手机没有授予悬浮窗权限，是否开启授予权限？</string>
+    <string name="whole_test_now">测试中</string>
+    <string name="whole_server_start">生成测试报告</string>
+    <string name="whole_err_server_port">端口号被占用,请重新开启应用</string>
+    <string name="whole_report_success">生成报告成功</string>
+    <string name="whole_report_describe">请在其它设备的网页浏览器中访问以下地址查看。\n地址：%1$s \n注意：访问的设备必需与当前手机在同一局域网内。</string>
+    <string name="whole_test">整体测试</string>
+    <string name="whole_testing">整体测试(测试中)</string>
+    <string name="whole_testing_hint">当前正在进行整体测试，请执行完成后再试！</string>
+    <string name="whole_single_testing_hint">当前有单个测试项未执行完，请执行完后再试！</string>
+    <string name="test_type">测试类型：%1$s</string>
+    <string name="test_method">交互方式：%1$s</string>
+    <string name="request_source">请求报文：%1$s</string>
+    <string name="source_service">服务器获取</string>
+    <string name="source_local">本地生成</string>
+    <string name="repeat_count">重复次数：%1$d次</string>
+    <string name="test_describe">测试说明：%1$s</string>
+    <string name="failed_describe">测试失败描述：%1$s</string>
+    <string name="test_duration">耗时：%1$s秒</string>
+    <string name="test_explain">测试说明</string>
+    <string name="test_explain_detail">1、部分测试项需要连接网络，所以请确保该设备已联网。\n2、注册、认证、注销有一定的顺序要求。</string>
+    <string name="aidl_wait">使用Service交互时与上一次的Activity需要间隔时间，所以等待%1$d秒后继续执行。</string>
+    <string name="title_reg_auth">注册、认证</string>
+    <string name="title_reg_auth_dereg">注册、认证、注销</string>
+    <string name="title_reset">重置</string>
+    <string name="describe_reset">该测试项会清空本地认证器中的所有数据</string>
+
+    <!-- 设置界面 -->
+    <string name="label_server_url">设置测试服务器地址：</string>
+    <string name="label_whole_test_count">设置整体测试中每项测试次数:</string>
+    <string name="label_deviceId">设备ID:</string>
+    <string name="label_tenement_platform">渠道(本地认证器):</string>
+    <string name="label_tenement_cross_platform">渠道(漫游认证器):</string>
+    <string name="save_devices_empty">设备ID不能为空！</string>
+    <string name="save_tenement_empty">渠道ID不能为空！</string>
+    <string name="save_success">保存成功</string>
+</resources>

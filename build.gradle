@@ -1,0 +1,29 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        google()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.0.2'
+    }
+}
+
+allprojects {
+    repositories {
+        mavenCentral()
+        google()
+    }
+}
+
+ext {
+    flavorDimensions = 'fido2sdk'
+    compileSdk = 31
+    targetSdk = 31
+    minSdk = 21
+    versionCode = 7;
+    versionName = '1.0.1'
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

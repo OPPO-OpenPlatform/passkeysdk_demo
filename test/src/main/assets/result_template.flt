@@ -1,0 +1,11 @@
+<fieldset>
+    <legend>%1$s</legend>
+    <br/>
+    result:%2$s
+    <br/>
+    spent:%3$s
+    <br/>
+    request:%4$s
+    <br/>
+    response:%5$s
+</fieldset>

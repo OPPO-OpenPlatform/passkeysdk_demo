@@ -1,0 +1,86 @@
+[
+  {
+    "operation": "Capacity",
+    "title": "Passkey"
+  },
+  {
+    "operation": "Reg",
+    "title": "Platform",
+    "requestMessage": {
+      "challenge": "A50F6085A3A901161CFAF09CE3777EB9780BFEA761CA9DED24AD1524A8DFBB79",
+      "timeout": 60000,
+      "excludeCredentials": [],
+      "pubKeyCredParams": [
+        {
+          "alg": "-7",
+          "type": "public-key"
+        }
+      ],
+      "rp": {
+        "id": "osec-fido-cn-test.wanyol.com",
+        "name": "认证"
+      },
+      "user": {
+        "id": "656D4D794E77",
+        "name": "userName",
+        "displayName": "userDisplayName"
+      },
+      "authenticatorSelection": {
+        "authenticatorAttachment": "platform",
+        "residentKey": "required"
+      },
+      "extensions": {}
+    }
+  },
+  {
+    "operation": "Reg",
+    "title": "CrossPlatform",
+    "requestMessage": {
+      "challenge": "A50F6085A3A901161CFAF09CE3777EB9780BFEA761CA9DED24AD1524A8DFBB79",
+      "timeout": 60000,
+      "excludeCredentials": [],
+      "pubKeyCredParams": [
+        {
+          "alg": "-7",
+          "type": "public-key"
+        }
+      ],
+      "rp": {
+        "id": "osec-fido-cn-test.wanyol.com",
+        "name": "认证"
+      },
+      "user": {
+        "id": "656D4D794E77",
+        "name": "userName",
+        "displayName": "userDisplayName"
+      },
+      "authenticatorSelection": {
+        "authenticatorAttachment": "cross-platform",
+        "residentKey": "required"
+      },
+      "extensions": {}
+    }
+  },
+  {
+    "operation": "Auth",
+    "title": "Platform",
+    "requestMessage": {
+      "challenge": "C4528EA30E6F09BC67CA860CBB672752AE1CEF45FCB7C83046CE58710022489F",
+      "timeout": 30000,
+      "rpId": "osec-fido-cn-test.wanyol.com",
+      "allowCredentials": [],
+      "extensions": {}
+    }
+  },
+  {
+    "operation": "Auth",
+    "title": "CrossPlatform",
+    "requestMessage": {
+      "challenge": "C4528EA30E6F09BC67CA860CBB672752AE1CEF45FCB7C83046CE58710022489F",
+      "timeout": 30000,
+      "rpId": "osec-fido-cn-test.wanyol.com",
+      "allowCredentials": [],
+      "extensions": {}
+    }
+  }
+]

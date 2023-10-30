@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="fragment_padding">15dp</dimen>
+    <dimen name="fragment_padding_top">10dp</dimen>
+</resources>
