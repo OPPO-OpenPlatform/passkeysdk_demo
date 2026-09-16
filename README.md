@@ -22,5 +22,5 @@ PasskeySDK-Demo通过展示给开发者如何使用PasskeySDK提供的API进行�
 选择测试类型后，编辑框中对应的请求报文可以手动编辑修改，以测试不同报文下认证器的行为差异。点击开始测试，返回的结果绿色图标代表成功，红色图标代表失败。
 
 ## Authors:
- - 李阳 (liyang123456@oppo.com)
+ - osec-gw@oppo.com
 
